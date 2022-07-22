@@ -29,6 +29,7 @@ h4 {
 p {
 	font-size: 18px;
 	line-height: 1.3;
+	color: #333;
 }
 li {
 	font-size: 17px;
@@ -77,6 +78,22 @@ li:last-child{
 li:nth-child(even){
 	color: red;
 }
-article p:last-child{
+
+/* Misconception - will not work it should be direct child */
+article p:fist-child{
 	color: orangered;
+}
+
+/* Anchor link */
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	color: #1098ad;
+}
+a:hover{
+	text-decoration: underline dashed orangered;
+}
+a:active{
+	color: #1098ad;
 }
