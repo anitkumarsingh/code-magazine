@@ -31,6 +31,24 @@ li {
 }
 
 /* Decendant seclector */
-article header p{
+/* article header p{ */
+  /* font-style: italic; */
+/* } */
+
+/* ID selector */
+#author{
   font-style: italic;
+  font-size: 17px;
+}
+#copyright{
+  font-size: 15px;
+}
+
+/* class selector */
+.related-author{
+  font-weight: bold;
+}
+
+.related{
+  list-style: none;
 }
