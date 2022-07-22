@@ -7,8 +7,12 @@ p,
 li {
 	font-family: sans-serif;
 }
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
 h1 {
-	color: blue;
 	text-transform: uppercase;
 	font-size: 26px;
 	font-style: italic;
@@ -32,23 +36,32 @@ li {
 
 /* Decendant seclector */
 /* article header p{ */
-  /* font-style: italic; */
+/* font-style: italic; */
 /* } */
 
 /* ID selector */
-#author{
-  font-style: italic;
-  font-size: 17px;
+#author {
+	font-style: italic;
+	font-size: 17px;
 }
-#copyright{
-  font-size: 15px;
+#copyright {
+	font-size: 15px;
 }
 
 /* class selector */
-.related-author{
-  font-weight: bold;
+.related-author {
+	font-weight: bold;
 }
 
-.related{
-  list-style: none;
+.related {
+	list-style: none;
+}
+
+.main-header,
+.related-posts {
+	background-color: #f7f7f7;
+}
+.related-posts{
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
 }
