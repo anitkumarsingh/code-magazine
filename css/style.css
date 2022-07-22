@@ -1,28 +1,36 @@
-h1{
-  color:blue;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-family: sans-serif;
+/*  combiner selector */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	font-family: sans-serif;
+}
+h1 {
+	color: blue;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-style: italic;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 25px;
+}
+p {
+	font-size: 18px;
+	line-height: 1.3;
+}
+li {
+	font-size: 17px;
+}
+
+/* Decendant seclector */
+article header p{
   font-style: italic;
-}
-h2{
-  font-size: 32px;
-  font-family: sans-serif;
-}
-h3{
-  font-size:30px;
-  font-family: sans-serif;
-}
-h4{
-  font-size: 25px;
-  font-family: sans-serif;
-}
-p{
-  font-size: 18px;
-  font-family: sans-serif;
-  line-height: 1.3;
-}
-li{
-  font-size: 17px;
-  font-family: sans-serif;
 }
