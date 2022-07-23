@@ -159,3 +159,31 @@ button{
 	bottom: 50px;
 	right: 50px;
 }
+
+/* pseodu elements: which doesn't exist in html document,start with two colons(::), they are inline element */
+h1::first-letter{
+	font-style: normal;
+}
+h2::first-letter{
+	font-size: 70px;
+}
+/* adjacent selector */
+h3 + p::first-line{
+	/* color:rebeccapurple */
+}
+
+h2{
+	position: relative;
+}
+h2::after{
+	content: "TOP";
+	background-color: #ff0e;
+	color: #666;
+	margin: 10px;
+	padding: 5px;
+	display: inline-block;
+	position:absolute; 
+	top: 0;
+	right: -25px;
+	font-size: 20px;
+}
