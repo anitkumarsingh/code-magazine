@@ -91,6 +91,7 @@ font-style: italic;
 
 .related {
 	list-style: none;
+	padding-left: 0;
 }
 
 .main-header,
@@ -107,7 +108,8 @@ font-style: italic;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	margin-top: 40px;
-	width: 320px;
+	padding: 0 20px 30px 20px;
+	box-sizing: border-box;
 }
 
 .related-post--heading {
@@ -218,11 +220,11 @@ nav {
 	display: block;
 }
 article {
-	width: 70%;
+	width: 72%;
 	float: left;
 }
 aside {
-	width: 20%;
+	width: 25%;
 	float: right;
 }
 footer {
