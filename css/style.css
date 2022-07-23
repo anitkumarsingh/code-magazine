@@ -6,6 +6,7 @@ body{
 	color: #333;
 	font-family: sans-serif;
 	border-top: 10px solid #1098ad;
+	position: relative;
 }
 .main{
 	width: 1000px;
@@ -99,7 +100,7 @@ font-style: italic;
 	padding: 40px;
 }
 .main-title{
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
 .related-posts{
 	border-top: 5px solid #1098ad;
@@ -146,4 +147,15 @@ a:active{
 }
 .post-img{
 	width: 100%;
+}
+
+/* Positioning:Absolute */
+button{
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid #f7f7f7;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
 }
