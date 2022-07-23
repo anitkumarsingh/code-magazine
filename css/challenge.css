@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body {
 	font-family: sans-serif;
@@ -18,6 +19,11 @@ h3 {
 }
 .product-detail {
 	margin: 20px 0 10px 10px;
+	font-size: 20px;
+}
+.product-price ~ p{
+	float: right;
+	margin-top: 2px;
 }
 p {
 	padding: 10px;
@@ -46,6 +52,7 @@ h3::before {
 }
 .product-price {
 	font-size: 20px;
+	float: left;
 }
 .available-colors{
   margin: 10px;
@@ -110,4 +117,22 @@ button:hover {
 	background-color: transparent;
 	color: inherit;
 	border-top: inherit;
+}
+
+.left-container{
+ /* background-color: #7b10ad; */
+ width: 250px;
+ float: left;
+}
+.middle-container{
+/* background-color: #1aa13c; */
+width: 260px;
+float:left;
+padding-left:30px ;
+}
+.right-container{
+	/* background-color:#9310ad; */
+	width: 250px;
+	float: right;
+
 }
