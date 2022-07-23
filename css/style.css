@@ -9,7 +9,7 @@ body {
 	position: relative;
 }
 .main {
-	width: 1000px;
+	width: 1200px;
 	margin: 0 auto;
 }
 article {
@@ -107,7 +107,7 @@ font-style: italic;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	margin-top: 40px;
-	width: 500px;
+	width: 320px;
 }
 
 .related-post--heading {
@@ -212,8 +212,19 @@ nav {
 }
 
 /* clearfix hack  */
-.clearfix::after{
+.clearfix::after {
 	content: '';
 	clear: both;
 	display: block;
+}
+article {
+	width: 70%;
+	float: left;
+}
+aside {
+	width: 20%;
+	float: right;
+}
+footer {
+	clear: both;
 }
