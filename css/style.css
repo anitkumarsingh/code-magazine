@@ -187,3 +187,21 @@ h2::after{
 	right: -25px;
 	font-size: 20px;
 }
+
+/* float  */
+.author-pic{
+	float: left;
+	border-radius: 100%;
+}
+.author{
+	float: left;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+h1{
+	float: left;
+}
+nav{
+	float: right;
+	
+}
