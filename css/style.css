@@ -1,21 +1,21 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+body {
 	color: #333;
 	font-family: sans-serif;
 	border-top: 10px solid #1098ad;
 	position: relative;
 }
-.main{
+.main {
 	width: 1000px;
 	margin: 0 auto;
 }
-article{
+article {
 	margin-bottom: 40px;
 }
-article header{
+article header {
 	margin: 40px 0;
 }
 /*  combiner selector */
@@ -42,21 +42,22 @@ h4 {
 p {
 	font-size: 18px;
 	line-height: 1.3;
-  padding: 5px;
+	padding: 5px;
 }
 li {
 	font-size: 17px;
 	margin-bottom: 10px;
 }
-li:last-child{
+li:last-child {
 	margin-bottom: 0;
 }
 
-ul,ol{
+ul,
+ol {
 	padding-left: 50px;
 }
 
-nav a:link{
+nav a:link {
 	/* Height and width doesn't have effect on inline block
 	margin: 20px;  apply only horizonal margin and padding 
 	height: 400px;
@@ -65,7 +66,7 @@ nav a:link{
 	margin: 20px; /* apply horizontally and vertically */
 	display: inline-block;
 }
-nav a:link:last-child{
+nav a:link:last-child {
 	margin-right: 0;
 }
 /* Decendant seclector 
@@ -96,61 +97,61 @@ font-style: italic;
 .related-posts {
 	background-color: #f7f7f7;
 }
-.main-header{
+.main-header {
 	padding: 40px;
 }
-.main-title{
+.main-title {
 	margin-bottom: 0;
 }
-.related-posts{
+.related-posts {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	margin-top: 40px;
 	width: 500px;
 }
 
-.related-post--heading{
+.related-post--heading {
 	padding: 50px 0 50px 50px;
 }
 /* pseodu selector */
-li:first-child{
+li:first-child {
 	font-weight: bold;
 }
-li:last-child{
+li:last-child {
 	font-style: italic;
 }
 
-li:nth-child(even){
+li:nth-child(even) {
 	color: red;
 }
 
 /* Misconception - will not work it should be direct child */
-article p:fist-child{
+article p:fist-child {
 	color: orangered;
 }
 
 /* Anchor link */
-a:link{
+a:link {
 	text-decoration: none;
 }
-a:visited{
+a:visited {
 	color: #1098ad;
 }
-a:hover{
-	opacity: .5;
+a:hover {
+	opacity: 0.5;
 }
-a:active{
+a:active {
 	color: #1098ad;
 }
-.secondary-title{
+.secondary-title {
 	margin-bottom: 20px;
 }
-.post-img{
+.post-img {
 	width: 100%;
 }
 
 /* Positioning:Absolute */
-button{
+button {
 	padding: 10px;
 	font-size: 20px;
 	border: 2px solid #f7f7f7;
@@ -161,47 +162,58 @@ button{
 }
 
 /* pseodu elements: which doesn't exist in html document,start with two colons(::), they are inline element */
-h1::first-letter{
+h1::first-letter {
 	font-style: normal;
 }
-h2::first-letter{
+h2::first-letter {
 	font-size: 70px;
 }
 /* adjacent selector */
-h3 + p::first-line{
+h3 + p::first-line {
 	/* color:rebeccapurple */
 }
 
-h2{
+h2 {
 	position: relative;
 }
-h2::after{
-	content: "TOP";
+h2::after {
+	content: 'TOP';
 	background-color: #ff0e;
 	color: #666;
 	margin: 10px;
 	padding: 5px;
 	display: inline-block;
-	position:absolute; 
+	position: absolute;
 	top: 0;
 	right: -25px;
 	font-size: 20px;
 }
 
 /* float  */
-.author-pic{
+.author-pic {
 	float: left;
 	border-radius: 100%;
 }
-.author{
+.author {
 	float: left;
 	padding-left: 10px;
 	margin-top: 10px;
 }
-h1{
+h1 {
 	float: left;
 }
-nav{
+nav {
 	float: right;
-	
+}
+
+/* Not fessible sol  */
+.clear {
+	clear: both;
+}
+
+/* clearfix hack  */
+.clearfix::after{
+	content: '';
+	clear: both;
+	display: block;
 }
