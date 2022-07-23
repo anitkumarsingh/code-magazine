@@ -7,6 +7,10 @@ body{
 	font-family: sans-serif;
 	border-top: 10px solid #1098ad;
 }
+.main{
+	width: 1000px;
+	margin: 0 auto;
+}
 article{
 	margin-bottom: 40px;
 }
