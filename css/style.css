@@ -54,10 +54,23 @@ li:last-child{
 ul,ol{
 	padding-left: 50px;
 }
-/* Decendant seclector */
-/* article header p{ */
-/* font-style: italic; */
-/* } */
+
+nav a:link{
+	/* Height and width doesn't have effect on inline block
+	margin: 20px;  apply only horizonal margin and padding 
+	height: 400px;
+	width: 100%;
+	*/
+	margin: 20px; /* apply horizontally and vertically */
+	display: inline-block;
+}
+nav a:link:last-child{
+	margin-right: 0;
+}
+/* Decendant seclector 
+article header p{ 
+font-style: italic; 
+ } */
 
 /* ID selector */
 #author {
@@ -123,7 +136,7 @@ a:visited{
 	color: #1098ad;
 }
 a:hover{
-	text-decoration: underline dashed orangered;
+	opacity: .5;
 }
 a:active{
 	color: #1098ad;
