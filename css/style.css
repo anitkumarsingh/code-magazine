@@ -5,6 +5,7 @@
 body{
 	color: #333;
 	font-family: sans-serif;
+	border-top: 10px solid #1098ad;
 }
 article{
 	margin-bottom: 40px;
@@ -87,6 +88,7 @@ ul,ol{
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	margin-top: 40px;
+	width: 500px;
 }
 
 .related-post--heading{
@@ -124,4 +126,7 @@ a:active{
 }
 .secondary-title{
 	margin-bottom: 20px;
+}
+.post-img{
+	width: 100%;
 }
