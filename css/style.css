@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #333;
+	font-family: sans-serif;
+	border-top: 10px solid #1098ad;
+	position: relative;
+}
+.main{
+	width: 1000px;
+	margin: 0 auto;
+}
+article{
+	margin-bottom: 40px;
+}
+article header{
+	margin: 40px 0;
+}
+/*  combiner selector */
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-style: italic;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 30px;
+	margin: 30px 0 5px 0;
+}
+h4 {
+	font-size: 25px;
+}
+p {
+	font-size: 18px;
+	line-height: 1.3;
+  padding: 5px;
+}
+li {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+li:last-child{
+	margin-bottom: 0;
+}
+
+ul,ol{
+	padding-left: 50px;
+}
+
+nav a:link{
+	/* Height and width doesn't have effect on inline block
+	margin: 20px;  apply only horizonal margin and padding 
+	height: 400px;
+	width: 100%;
+	*/
+	margin: 20px; /* apply horizontally and vertically */
+	display: inline-block;
+}
+nav a:link:last-child{
+	margin-right: 0;
+}
+/* Decendant seclector 
+article header p{ 
+font-style: italic; 
+ } */
+
+/* ID selector */
+#author {
+	font-style: italic;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+#copyright {
+	font-size: 15px;
+}
+
+/* class selector */
+.related-author {
+	font-weight: bold;
+}
+
+.related {
+	list-style: none;
+}
+
+.main-header,
+.related-posts {
+	background-color: #f7f7f7;
+}
+.main-header{
+	padding: 40px;
+}
+.main-title{
+	margin-bottom: 0;
+}
+.related-posts{
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	margin-top: 40px;
+	width: 500px;
+}
+
+.related-post--heading{
+	padding: 50px 0 50px 50px;
+}
+/* pseodu selector */
+li:first-child{
+	font-weight: bold;
+}
+li:last-child{
+	font-style: italic;
+}
+
+li:nth-child(even){
+	color: red;
+}
+
+/* Misconception - will not work it should be direct child */
+article p:fist-child{
+	color: orangered;
+}
+
+/* Anchor link */
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	color: #1098ad;
+}
+a:hover{
+	opacity: .5;
+}
+a:active{
+	color: #1098ad;
+}
+.secondary-title{
+	margin-bottom: 20px;
+}
+.post-img{
+	width: 100%;
+}
+
+/* Positioning:Absolute */
+button{
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid #f7f7f7;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+/* pseodu elements: which doesn't exist in html document,start with two colons(::), they are inline element */
+h1::first-letter{
+	font-style: normal;
+}
+h2::first-letter{
+	font-size: 70px;
+}
+/* adjacent selector */
+h3 + p::first-line{
+	/* color:rebeccapurple */
+}
+
+h2{
+	position: relative;
+}
+h2::after{
+	content: "TOP";
+	background-color: #ff0e;
+	color: #666;
+	margin: 10px;
+	padding: 5px;
+	display: inline-block;
+	position:absolute; 
+	top: 0;
+	right: -25px;
+	font-size: 20px;
+}
