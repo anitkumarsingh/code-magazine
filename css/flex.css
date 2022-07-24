@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  background-color: #666;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.el{
+  font-size: 32px;
+
+}
+.el-1{
+  background-color: blueviolet;
+  align-self: flex-start;
+}
+.el-2{
+  background-color: orangered;
+ 
+}
+.el-3{
+  background-color: green;
+  height: 200px;
+}
+.el-4{
+  background-color: goldenrod;
+}
+.el-5{
+  background-color: crimson;
+  align-self: stretch;
+  order: 1;
+}
+.el-6{
+  background-color: palevioletred;
+  order: -1;
+}
+.el-7{
+  background-color: steelblue;
+}
+.el-8{
+  background-color: yellow;
+}
