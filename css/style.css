@@ -191,7 +191,7 @@ h2::after {
 	font-size: 20px;
 }
 
-/* float  */
+/* float  
 .author-pic {
 	float: left;
 	border-radius: 100%;
@@ -208,12 +208,14 @@ nav {
 	float: right;
 }
 
-/* Not fessible sol  */
+*/
+/* Not fessible sol 
 .clear {
 	clear: both;
 }
 
-/* clearfix hack  */
+ */
+/* clearfix hack  
 .clearfix::after {
 	content: '';
 	clear: both;
@@ -229,4 +231,49 @@ aside {
 }
 footer {
 	clear: both;
+}
+
+*/
+
+/* Flexbox layout  */
+.main-header{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 13px;
+}
+.author-info{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+#author{
+	margin-bottom: 0;
+}
+.author-pic{
+border-radius: 100%;
+}
+.post-item{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.related-author{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 15px;
+	color: #333;
+}
+.post-container{
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	flex: auto;
+	align-items: flex-start;
+}
+.related-posts{
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 300px;
+	align-items: flex-start;
 }
