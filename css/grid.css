@@ -1,8 +1,12 @@
 .container-1 {
 	display: grid;
 	background-color: #666;
-	grid-template-columns: 200px 450px 100px 100px;
-  grid-template-rows: 500px 300px;
+	/* grid-template-columns: 200px 450px 100px 100px; */
+  /* grid-template-rows: 100px 60px; */
+   /* With fr  */
+  /* grid-template-columns: 200px 450px 1fr auto; */
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 2fr;
   gap: 20px;
   row-gap: 40px;
 }
@@ -17,7 +21,6 @@
 }
 .el-3 {
 	background-color: green;
-	height: 200px;
 }
 .el-4 {
 	background-color: goldenrod;
